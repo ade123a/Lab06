@@ -8,15 +8,23 @@ const topics = [
     
 
 function EngineeringTopics() {
-    return topics.map(function(topic) {
-            return (
-            <div>
+
+
+    return (
+        <div>
+            <h2>Engineering Topic</h2>
+            {topics.map(function(topic){
+                return (
+                <div> 
                 <h3>{topic.title}</h3>
                 <p>{topic.description}</p>
+                </div>
+                );
+            })}
             </div>
         );        
-    });
+    };
     
-}
+
 
 export default EngineeringTopics;
